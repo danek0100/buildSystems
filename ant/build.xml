@@ -9,7 +9,9 @@
      <property name="classes" location="${build}/classes"/>
      <property name="lib" location="common/lib"/>
      <property name="doc.dir" location="${build}/documentation"/>
+     <property file="./local.properties" /> 
 
+     <echo message="Build version=${release}"/>
      <!-- targets -->
      <target name="compile">
          <mkdir dir="${classes}"/>

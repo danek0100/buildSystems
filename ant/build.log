@@ -21,10 +21,20 @@ Setting project property: doc.dir -> C:\Users\sobda\IdeaProjects\buildSystems\an
 <<< TASK FINISHED -- org.apache.tools.ant.UnknownElement@57baeedf
 >>> TASK STARTED -- org.apache.tools.ant.UnknownElement@343f4d3d
 --- MESSAGE LOGGED
+ [property] Loading C:\Users\sobda\IdeaProjects\buildSystems\ant\local.properties
+--- MESSAGE LOGGED
+Setting project property: release -> 1.0
+<<< TASK FINISHED -- org.apache.tools.ant.UnknownElement@343f4d3d
+>>> TASK STARTED -- org.apache.tools.ant.UnknownElement@53b32d7
+--- MESSAGE LOGGED
+     [echo] Build version=1.0
+<<< TASK FINISHED -- org.apache.tools.ant.UnknownElement@53b32d7
+>>> TASK STARTED -- org.apache.tools.ant.UnknownElement@490ab905
+--- MESSAGE LOGGED
 dropping C:\Users\sobda\IdeaProjects\buildSystems\ant\common\lib\junit.jar from path as it doesn't exist
 --- MESSAGE LOGGED
 Class org.apache.tools.ant.taskdefs.optional.junit.JUnitTask loaded from parent loader (parentFirst)
-<<< TASK FINISHED -- org.apache.tools.ant.UnknownElement@343f4d3d
+<<< TASK FINISHED -- org.apache.tools.ant.UnknownElement@490ab905
 --- MESSAGE LOGGED
 Setting ro project property: ant.project.invoked-targets -> all
 --- MESSAGE LOGGED
@@ -38,7 +48,7 @@ Complete build sequence is [clean, compile, test, generateDocumentation, all, pa
 >> TARGET STARTED -- clean
 
 clean:
->>> TASK STARTED -- org.apache.tools.ant.UnknownElement@5f9d02cb
+>>> TASK STARTED -- org.apache.tools.ant.UnknownElement@5ae63ade
 --- MESSAGE LOGGED
    [delete] Deleting directory C:\Users\sobda\IdeaProjects\buildSystems\ant\build
 --- MESSAGE LOGGED
@@ -145,17 +155,17 @@ clean:
    [delete] Deleting directory C:\Users\sobda\IdeaProjects\buildSystems\ant\build\documentation
 --- MESSAGE LOGGED
    [delete] Deleting directory C:\Users\sobda\IdeaProjects\buildSystems\ant\build
-<<< TASK FINISHED -- org.apache.tools.ant.UnknownElement@5f9d02cb
+<<< TASK FINISHED -- org.apache.tools.ant.UnknownElement@5ae63ade
 << TARGET FINISHED -- clean
 clean:  duration 0 seconds
 >> TARGET STARTED -- compile
 
 compile:
->>> TASK STARTED -- org.apache.tools.ant.UnknownElement@6f195bc3
+>>> TASK STARTED -- org.apache.tools.ant.UnknownElement@42d8062c
 --- MESSAGE LOGGED
     [mkdir] Created dir: C:\Users\sobda\IdeaProjects\buildSystems\ant\build\classes
-<<< TASK FINISHED -- org.apache.tools.ant.UnknownElement@6f195bc3
->>> TASK STARTED -- org.apache.tools.ant.UnknownElement@42f93a98
+<<< TASK FINISHED -- org.apache.tools.ant.UnknownElement@42d8062c
+>>> TASK STARTED -- org.apache.tools.ant.UnknownElement@25af5db5
 --- MESSAGE LOGGED
 fileset: Setup scanner in dir C:\Users\sobda\IdeaProjects\buildSystems\ant\src with patternSet{ includes: [] excludes: [] }
 --- MESSAGE LOGGED
@@ -182,13 +192,13 @@ not part of the command.
     [javac] Files to be compiled:
     C:\Users\sobda\IdeaProjects\buildSystems\ant\src\Main.java
     C:\Users\sobda\IdeaProjects\buildSystems\ant\src\TestMain.java
-<<< TASK FINISHED -- org.apache.tools.ant.UnknownElement@42f93a98
+<<< TASK FINISHED -- org.apache.tools.ant.UnknownElement@25af5db5
 << TARGET FINISHED -- compile
 compile:  duration 0 seconds
 >> TARGET STARTED -- test
 
 test:
->>> TASK STARTED -- org.apache.tools.ant.UnknownElement@20b2475a
+>>> TASK STARTED -- org.apache.tools.ant.UnknownElement@1b919693
 --- MESSAGE LOGGED
     [junit] Couldn't find junit/framework/TestCase.class
 --- MESSAGE LOGGED
@@ -214,8 +224,6 @@ Loaded from C:\Program Files\Ant\lib\ant-junit.jar org/apache/tools/ant/taskdefs
 --- MESSAGE LOGGED
 Class org.apache.tools.ant.taskdefs.optional.junit.JUnitTaskMirror loaded from parent loader (parentFirst)
 --- MESSAGE LOGGED
-Class org.apache.tools.ant.taskdefs.optional.junit.JUnitTaskMirror$SummaryJUnitResultFormatterMirror loaded from parent loader (parentFirst)
---- MESSAGE LOGGED
 Class java.lang.Throwable loaded from parent loader (parentFirst)
 --- MESSAGE LOGGED
 Finding class junit.framework.AssertionFailedError
@@ -232,6 +240,8 @@ Class org.apache.tools.ant.AntClassLoader loaded from parent loader (parentFirst
 --- MESSAGE LOGGED
 Class org.apache.tools.ant.taskdefs.optional.junit.JUnitTaskMirror$JUnitTestRunnerMirror loaded from parent loader (parentFirst)
 --- MESSAGE LOGGED
+Class org.apache.tools.ant.taskdefs.optional.junit.JUnitTaskMirror$SummaryJUnitResultFormatterMirror loaded from parent loader (parentFirst)
+--- MESSAGE LOGGED
 Class org.apache.tools.ant.taskdefs.optional.junit.JUnitTask loaded from parent loader (parentFirst)
 --- MESSAGE LOGGED
     [junit] Using System properties {ant.library.dir=C:\Program Files\Ant\lib, java.specification.version=18, sun.cpu.isalist=amd64, sun.jnu.encoding=Cp1251, java.class.path=C:\Program Files\Ant\bin\..\lib\ant-launcher.jar;C:\Program Files\Ant\lib\ant-antlr.jar;C:\Program Files\Ant\lib\ant-apache-bcel.jar;C:\Program Files\Ant\lib\ant-apache-bsf.jar;C:\Program Files\Ant\lib\ant-apache-log4j.jar;C:\Program Files\Ant\lib\ant-apache-oro.jar;C:\Program Files\Ant\lib\ant-apache-regexp.jar;C:\Program Files\Ant\lib\ant-apache-resolver.jar;C:\Program Files\Ant\lib\ant-apache-xalan2.jar;C:\Program Files\Ant\lib\ant-commons-logging.jar;C:\Program Files\Ant\lib\ant-commons-net.jar;C:\Program Files\Ant\lib\ant-jai.jar;C:\Program Files\Ant\lib\ant-javamail.jar;C:\Program Files\Ant\lib\ant-jdepend.jar;C:\Program Files\Ant\lib\ant-jmf.jar;C:\Program Files\Ant\lib\ant-jsch.jar;C:\Program Files\Ant\lib\ant-junit.jar;C:\Program Files\Ant\lib\ant-junit4.jar;C:\Program Files\Ant\lib\ant-launcher.jar;C:\Program Files\Ant\lib\ant-netrexx.jar;C:\Program Files\Ant\lib\ant-swing.jar;C:\Program Files\Ant\lib\ant-testutil.jar;C:\Program Files\Ant\lib\ant.jar, java.vm.vendor=Oracle Corporation, sun.arch.data.model=64, user.variant=, java.vendor.url=https://java.oracle.com/, user.timezone=Europe/Moscow, os.name=Windows 10, java.vm.specification.version=18, user.country=RU, sun.java.launcher=SUN_STANDARD, sun.boot.library.path=C:\Program Files\Java\jdk-18.0.2.1\bin, sun.java.command=org.apache.tools.ant.launch.Launcher, jdk.debug=release, sun.cpu.endian=little, user.home=C:\Users\sobda, user.language=ru, sun.stderr.encoding=cp866, java.specification.vendor=Oracle Corporation, java.version.date=2022-08-18, java.home=C:\Program Files\Java\jdk-18.0.2.1, file.separator=\, java.vm.compressedOopsMode=Zero based, line.separator=
@@ -247,17 +257,11 @@ Loaded from C:\Users\sobda\IdeaProjects\buildSystems\ant\common\lib\junit-4.10.j
 --- MESSAGE LOGGED
 Class junit.framework.TestListener loaded from ant loader (parentFirst)
 --- MESSAGE LOGGED
-Class java.lang.CharSequence loaded from parent loader (parentFirst)
+Class java.io.IOException loaded from parent loader (parentFirst)
 --- MESSAGE LOGGED
 Class java.io.Writer loaded from parent loader (parentFirst)
 --- MESSAGE LOGGED
 Class java.io.FileWriter loaded from parent loader (parentFirst)
---- MESSAGE LOGGED
-Finding class org.apache.tools.ant.taskdefs.optional.junit.JUnitResultFormatter
---- MESSAGE LOGGED
-Loaded from C:\Program Files\Ant\lib\ant-junit.jar org/apache/tools/ant/taskdefs/optional/junit/JUnitResultFormatter.class
---- MESSAGE LOGGED
-Class org.apache.tools.ant.taskdefs.optional.junit.JUnitTaskMirror$JUnitResultFormatterMirror loaded from parent loader (parentFirst)
 --- MESSAGE LOGGED
 Finding class org.apache.tools.ant.taskdefs.optional.junit.TestListenerWrapper
 --- MESSAGE LOGGED
@@ -271,6 +275,8 @@ Finding class org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner$3
 --- MESSAGE LOGGED
 Loaded from C:\Program Files\Ant\lib\ant-junit.jar org/apache/tools/ant/taskdefs/optional/junit/JUnitTestRunner$3.class
 --- MESSAGE LOGGED
+Class java.lang.ClassNotFoundException loaded from parent loader (parentFirst)
+--- MESSAGE LOGGED
 Class java.lang.Exception loaded from parent loader (parentFirst)
 --- MESSAGE LOGGED
 Class java.io.StringWriter loaded from parent loader (parentFirst)
@@ -281,19 +287,23 @@ Class java.io.StringReader loaded from parent loader (parentFirst)
 --- MESSAGE LOGGED
 Class java.io.BufferedWriter loaded from parent loader (parentFirst)
 --- MESSAGE LOGGED
-Class java.io.IOException loaded from parent loader (parentFirst)
+Class java.lang.CharSequence loaded from parent loader (parentFirst)
 --- MESSAGE LOGGED
-Class java.lang.ClassNotFoundException loaded from parent loader (parentFirst)
+Finding class org.apache.tools.ant.taskdefs.optional.junit.JUnitResultFormatter
+--- MESSAGE LOGGED
+Loaded from C:\Program Files\Ant\lib\ant-junit.jar org/apache/tools/ant/taskdefs/optional/junit/JUnitResultFormatter.class
+--- MESSAGE LOGGED
+Class org.apache.tools.ant.taskdefs.optional.junit.JUnitTaskMirror$JUnitResultFormatterMirror loaded from parent loader (parentFirst)
 --- MESSAGE LOGGED
 Class java.io.OutputStream loaded from parent loader (parentFirst)
---- MESSAGE LOGGED
-Class java.io.PrintStream loaded from parent loader (parentFirst)
---- MESSAGE LOGGED
-Class org.apache.tools.ant.util.TeeOutputStream loaded from parent loader (parentFirst)
 --- MESSAGE LOGGED
 Finding class org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner$1
 --- MESSAGE LOGGED
 Loaded from C:\Program Files\Ant\lib\ant-junit.jar org/apache/tools/ant/taskdefs/optional/junit/JUnitTestRunner$1.class
+--- MESSAGE LOGGED
+Class java.io.PrintStream loaded from parent loader (parentFirst)
+--- MESSAGE LOGGED
+Class org.apache.tools.ant.util.TeeOutputStream loaded from parent loader (parentFirst)
 --- MESSAGE LOGGED
 Class java.io.ByteArrayOutputStream loaded from parent loader (parentFirst)
 --- MESSAGE LOGGED
@@ -337,11 +347,11 @@ Class java.io.BufferedReader loaded from parent loader (parentFirst)
 --- MESSAGE LOGGED
 Class java.util.Vector loaded from parent loader (parentFirst)
 --- MESSAGE LOGGED
+Class java.lang.ThreadDeath loaded from parent loader (parentFirst)
+--- MESSAGE LOGGED
 Class java.util.List loaded from parent loader (parentFirst)
 --- MESSAGE LOGGED
 Class java.util.Collection loaded from parent loader (parentFirst)
---- MESSAGE LOGGED
-Class java.lang.ThreadDeath loaded from parent loader (parentFirst)
 --- MESSAGE LOGGED
 Finding class junit.framework.Protectable
 --- MESSAGE LOGGED
@@ -579,11 +589,13 @@ Loaded from C:\Users\sobda\IdeaProjects\buildSystems\ant\common\lib\junit-4.10.j
 --- MESSAGE LOGGED
 Class org.junit.runners.model.Statement loaded from ant loader (parentFirst)
 --- MESSAGE LOGGED
-Finding class org.junit.internal.runners.statements.RunBefores
+Finding class org.junit.runners.ParentRunner$2
 --- MESSAGE LOGGED
-Loaded from C:\Users\sobda\IdeaProjects\buildSystems\ant\common\lib\junit-4.10.jar org/junit/internal/runners/statements/RunBefores.class
+Loaded from C:\Users\sobda\IdeaProjects\buildSystems\ant\common\lib\junit-4.10.jar org/junit/runners/ParentRunner$2.class
 --- MESSAGE LOGGED
-Class org.junit.internal.runners.statements.RunBefores loaded from ant loader (parentFirst)
+Class org.junit.runners.ParentRunner$2 loaded from ant loader (parentFirst)
+--- MESSAGE LOGGED
+Class java.lang.Runnable loaded from parent loader (parentFirst)
 --- MESSAGE LOGGED
 Class java.lang.Iterable loaded from parent loader (parentFirst)
 --- MESSAGE LOGGED
@@ -593,19 +605,17 @@ Loaded from C:\Users\sobda\IdeaProjects\buildSystems\ant\common\lib\junit-4.10.j
 --- MESSAGE LOGGED
 Class org.junit.rules.RunRules loaded from ant loader (parentFirst)
 --- MESSAGE LOGGED
-Class java.lang.Runnable loaded from parent loader (parentFirst)
---- MESSAGE LOGGED
-Finding class org.junit.runners.ParentRunner$2
---- MESSAGE LOGGED
-Loaded from C:\Users\sobda\IdeaProjects\buildSystems\ant\common\lib\junit-4.10.jar org/junit/runners/ParentRunner$2.class
---- MESSAGE LOGGED
-Class org.junit.runners.ParentRunner$2 loaded from ant loader (parentFirst)
---- MESSAGE LOGGED
 Finding class org.junit.internal.runners.statements.RunAfters
 --- MESSAGE LOGGED
 Loaded from C:\Users\sobda\IdeaProjects\buildSystems\ant\common\lib\junit-4.10.jar org/junit/internal/runners/statements/RunAfters.class
 --- MESSAGE LOGGED
 Class org.junit.internal.runners.statements.RunAfters loaded from ant loader (parentFirst)
+--- MESSAGE LOGGED
+Finding class org.junit.internal.runners.statements.RunBefores
+--- MESSAGE LOGGED
+Loaded from C:\Users\sobda\IdeaProjects\buildSystems\ant\common\lib\junit-4.10.jar org/junit/internal/runners/statements/RunBefores.class
+--- MESSAGE LOGGED
+Class org.junit.internal.runners.statements.RunBefores loaded from ant loader (parentFirst)
 --- MESSAGE LOGGED
 Finding class org.junit.internal.AssumptionViolatedException
 --- MESSAGE LOGGED
@@ -639,17 +649,17 @@ Loaded from C:\Users\sobda\IdeaProjects\buildSystems\ant\common\lib\junit-4.10.j
 --- MESSAGE LOGGED
 Class org.junit.runners.model.RunnerScheduler loaded from ant loader (parentFirst)
 --- MESSAGE LOGGED
-Finding class org.junit.internal.runners.statements.FailOnTimeout
---- MESSAGE LOGGED
-Loaded from C:\Users\sobda\IdeaProjects\buildSystems\ant\common\lib\junit-4.10.jar org/junit/internal/runners/statements/FailOnTimeout.class
---- MESSAGE LOGGED
-Class org.junit.internal.runners.statements.FailOnTimeout loaded from ant loader (parentFirst)
---- MESSAGE LOGGED
 Finding class org.junit.internal.runners.statements.ExpectException
 --- MESSAGE LOGGED
 Loaded from C:\Users\sobda\IdeaProjects\buildSystems\ant\common\lib\junit-4.10.jar org/junit/internal/runners/statements/ExpectException.class
 --- MESSAGE LOGGED
 Class org.junit.internal.runners.statements.ExpectException loaded from ant loader (parentFirst)
+--- MESSAGE LOGGED
+Finding class org.junit.internal.runners.statements.FailOnTimeout
+--- MESSAGE LOGGED
+Loaded from C:\Users\sobda\IdeaProjects\buildSystems\ant\common\lib\junit-4.10.jar org/junit/internal/runners/statements/FailOnTimeout.class
+--- MESSAGE LOGGED
+Class org.junit.internal.runners.statements.FailOnTimeout loaded from ant loader (parentFirst)
 --- MESSAGE LOGGED
 Finding class org.junit.internal.runners.statements.InvokeMethod
 --- MESSAGE LOGGED
@@ -916,15 +926,15 @@ Class java.util.Enumeration loaded from parent loader (parentFirst)
     [junit] Starting test thread 0
 --- MESSAGE LOGGED
     [junit] Ending test thread 0
-<<< TASK FINISHED -- org.apache.tools.ant.UnknownElement@20b2475a
+<<< TASK FINISHED -- org.apache.tools.ant.UnknownElement@1b919693
 << TARGET FINISHED -- test
 test:  duration 0 seconds
 >> TARGET STARTED -- generateDocumentation
 
 generateDocumentation:
->>> TASK STARTED -- org.apache.tools.ant.UnknownElement@53251a66
-<<< TASK FINISHED -- org.apache.tools.ant.UnknownElement@53251a66
->>> TASK STARTED -- org.apache.tools.ant.UnknownElement@282cb7c7
+>>> TASK STARTED -- org.apache.tools.ant.UnknownElement@7aaca91a
+<<< TASK FINISHED -- org.apache.tools.ant.UnknownElement@7aaca91a
+>>> TASK STARTED -- org.apache.tools.ant.UnknownElement@2141a12
 --- MESSAGE LOGGED
   [javadoc] scanning C:\Users\sobda\IdeaProjects\buildSystems\ant\build\classes for packages.
 --- MESSAGE LOGGED
@@ -1047,7 +1057,7 @@ not part of the command.
   [javadoc] Generating C:\Users\sobda\IdeaProjects\buildSystems\ant\build\documentation\help-doc.html...
 --- MESSAGE LOGGED
   [javadoc] 4 warnings
-<<< TASK FINISHED -- org.apache.tools.ant.UnknownElement@282cb7c7
+<<< TASK FINISHED -- org.apache.tools.ant.UnknownElement@2141a12
 << TARGET FINISHED -- generateDocumentation
 generateDocumentation:  duration 1 second
 >> TARGET STARTED -- all
